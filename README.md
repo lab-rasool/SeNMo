@@ -24,7 +24,7 @@ python SeNMo_Training.py \
 ```
 ## Running the SeNMo Finetuning
 
-To run the SeNMo Training with the specified parameters, use the following command:
+To run the SeNMo Finetuning with the specified parameters, use the following command:
 
 ```bash
 python SeNMo_Training.py \
@@ -45,8 +45,55 @@ python SeNMo_Training.py \
     --pretrained_model_dir < ... > \
     --cancer 'CPTAC-LUSC' \
     --frozen_layers 0 \
+    --input_size_omic 80697 \
 ```
 
+## Running the SeNMo Testing
+
+To run the SeNMo Testing with the specified parameters, use the following command:
+
+```bash
+python SeNMo_Testing.py \
+    --regression True \
+    --exp_name surv \
+    --reg_type all \
+    --disease pancancer_combined \
+    --task surv \
+    --gpu_ids 0 \
+    --lr 0.0005811726189177087 \
+    --weight_decay 0.005978947728252338 \
+    --dropout_rate 0.10583716299176746 \
+    --batch_size 1 \
+    --niter_decay 8 \
+    --dataroot < ... > \
+    --checkpoints_dir < ... > \
+    --pretrained_model_dir < ... > \
+    --cancer 'CPTAC-LUSC' \
+    --frozen_layers 0 \
+    --input_size_omic 80697 \  
+```
+
+## Running the SeNMo Ensemble Testing
+
+To run the SeNMo Ensemble Testing with the specified parameters, use the following command:
+
+```bash
+python SeNMo_Ensemble.py \
+    --regression True \
+    --exp_name surv \
+    --reg_type all \
+    --disease pancancer_combined \
+    --task surv \
+    --gpu_ids 0 \
+    --lr 0.0005811726189177087 \
+    --weight_decay 0.005978947728252338 \
+    --dropout_rate 0.10583716299176746 \
+    --batch_size 1 \
+    --dataroot < ... > \
+    --checkpoints_dir < ... > \
+    --pretrained_model_dir < ... > \
+    --input_size_omic 80697 \  
+```
 
     
 
