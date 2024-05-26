@@ -18,8 +18,8 @@ python SeNMo_Training.py \
     --weight_decay 0.005978947728252338 \
     --dropout_rate 0.10583716299176746 \
     --batch_size 256 \
-    --dataroot <> \
-    --checkpoints_dir <> \
+    --dataroot < ... > \
+    --checkpoints_dir < ... > \
     --input_size_omic 80697 \
 ```
 ## Running the SeNMo Finetuning
@@ -68,7 +68,6 @@ python SeNMo_Testing.py \
     --dataroot < ... > \
     --checkpoints_dir < ... > \
     --pretrained_model_dir < ... > \
-    --cancer 'CPTAC-LUSC' \
     --frozen_layers 0 \
     --input_size_omic 80697 \  
 ```
