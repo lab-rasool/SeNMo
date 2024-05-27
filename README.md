@@ -1,10 +1,33 @@
-TODO: Add requirements.txt, link embeddings dataset, link to MINDS dataset.
-# SeNMo
-A Self-Normalizing DL Model for Enhanced Multi-Omics Data Analysis in Oncology
+
+# SeNMo: A Self-Normalizing DL Model for Enhanced Multi-Omics Data Analysis in Oncology
+
+## Overview
+
+SeNMo is a deep learning model designed to enhance the analysis of multi-omics data in oncology. This repository contains the code and instructions for training, fine-tuning, testing, and ensemble testing of the SeNMo model.
+
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Running the SeNMo Training](#running-the-senmo-training)
+- [Running the SeNMo Finetuning](#running-the-senmo-finetuning)
+- [Running the SeNMo Testing](#running-the-senmo-testing)
+- [Running the SeNMo Ensemble Testing](#running-the-senmo-ensemble-testing)
+- [Checkpoints](#checkpoints)
+- [Embeddings](#embeddings)
+- [Paper](#paper)
+- [TODO](#todo)
+
+## Requirements
+
+Ensure you have all the necessary dependencies installed. You can install them using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Running the SeNMo Training
 
-To run the SeNMo Training with the specified parameters, use the following command:
+To train the SeNMo model with the specified parameters, use the following command:
 
 ```bash
 python SeNMo_Training.py \
@@ -19,13 +42,14 @@ python SeNMo_Training.py \
     --weight_decay 0.005978947728252338 \
     --dropout_rate 0.10583716299176746 \
     --batch_size 256 \
-    --dataroot < ... > \
-    --checkpoints_dir < ... > \
-    --input_size_omic 80697 \
+    --dataroot <path_to_data> \
+    --checkpoints_dir <path_to_checkpoints> \
+    --input_size_omic 80697
 ```
+
 ## Running the SeNMo Finetuning
 
-To run the SeNMo Finetuning with the specified parameters, use the following command:
+To finetune the SeNMo model with the specified parameters, use the following command:
 
 ```bash
 python SeNMo_Training.py \
@@ -41,17 +65,17 @@ python SeNMo_Training.py \
     --dropout_rate 0.35 \
     --batch_size 16 \
     --niter_decay 8 \
-    --dataroot < ... > \
-    --checkpoints_dir < ... > \
-    --pretrained_model_dir < ... > \
+    --dataroot <path_to_data> \
+    --checkpoints_dir <path_to_checkpoints> \
+    --pretrained_model_dir <path_to_pretrained_model> \
     --cancer 'CPTAC-LUSC' \
     --frozen_layers 0 \
-    --input_size_omic 80697 \
+    --input_size_omic 80697
 ```
 
 ## Running the SeNMo Testing
 
-To run the SeNMo Testing with the specified parameters, use the following command:
+To test the SeNMo model with the specified parameters, use the following command:
 
 ```bash
 python SeNMo_Testing.py \
@@ -66,16 +90,16 @@ python SeNMo_Testing.py \
     --dropout_rate 0.10583716299176746 \
     --batch_size 1 \
     --niter_decay 8 \
-    --dataroot < ... > \
-    --checkpoints_dir < ... > \
-    --pretrained_model_dir < ... > \
+    --dataroot <path_to_data> \
+    --checkpoints_dir <path_to_checkpoints> \
+    --pretrained_model_dir <path_to_pretrained_model> \
     --frozen_layers 0 \
-    --input_size_omic 80697 \  
+    --input_size_omic 80697
 ```
 
 ## Running the SeNMo Ensemble Testing
 
-To run the SeNMo Ensemble Testing with the specified parameters, use the following command:
+To perform ensemble testing with the SeNMo model, use the following command:
 
 ```bash
 python SeNMo_Ensemble.py \
@@ -89,13 +113,24 @@ python SeNMo_Ensemble.py \
     --weight_decay 0.005978947728252338 \
     --dropout_rate 0.10583716299176746 \
     --batch_size 1 \
-    --dataroot < ... > \
-    --checkpoints_dir < ... > \
-    --pretrained_model_dir < ... > \
-    --input_size_omic 80697 \  
+    --dataroot <path_to_data> \
+    --checkpoints_dir <path_to_checkpoints> \
+    --pretrained_model_dir <path_to_pretrained_model> \
+    --input_size_omic 80697
 ```
 
-    
+## Checkpoints
 
+You can find the pre-trained model checkpoints [here](https://huggingface.co/Lab-Rasool/SeNMo/tree/main).
 
+## Embeddings
 
+Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-Rasool/TCGA/viewer/molecular).
+
+## Paper
+
+For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/arXiv.2405.08226).
+
+## TODO
+
+- Link to MINDS dataset
