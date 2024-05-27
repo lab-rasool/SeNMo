@@ -1,6 +1,8 @@
 
 # SeNMo: A Self-Normalizing DL Model for Enhanced Multi-Omics Data Analysis in Oncology
 
+![SeNMo Framework](fig1-design.png)
+
 ## Overview
 
 SeNMo is a deep learning model designed to enhance the analysis of multi-omics data in oncology. This repository contains the code and instructions for training, fine-tuning, testing, and ensemble testing of the SeNMo model.
@@ -129,7 +131,7 @@ Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-
 
 ## Paper
 
-For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/arXiv.2405.08226).
+For detailed information, refer to the [research paper](https://doi.org/10.48550/arXiv.2405.08226).
 
 ## TODO
 
