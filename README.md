@@ -131,7 +131,7 @@ Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-
 
 ## Paper
 
-For detailed information, refer to the [research paper](https://doi.org/10.48550/arXiv.2405.08226).
+For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/arXiv.2405.08226).
 
 ## TODO
 
