@@ -36,6 +36,7 @@ python SeNMo_Training.py \
     --regression True \
     --finetune False  \
     --exp_name surv \
+    --act_type None \
     --reg_type all \
     --disease pancancer_combined \
     --task surv \
@@ -59,6 +60,7 @@ python SeNMo_Training.py \
     --finetune True  \
     --exp_name surv \
     --reg_type all \
+    --act_type None \
     --disease pancancer_indl_cancers \
     --task surv \
     --gpu_ids 0 \
@@ -84,6 +86,7 @@ python SeNMo_Testing.py \
     --regression True \
     --exp_name surv \
     --reg_type all \
+    --act_type None \
     --disease pancancer_combined \
     --task surv \
     --gpu_ids 0 \
@@ -108,6 +111,7 @@ python SeNMo_Ensemble.py \
     --regression True \
     --exp_name surv \
     --reg_type all \
+    --act_type None \
     --disease pancancer_combined \
     --task surv \
     --gpu_ids 0 \
@@ -136,3 +140,7 @@ For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/ar
 ## TODO
 
 - Link to MINDS dataset
+- Provide Preprocessing code
+- Link to HoneyBee
+- Merge classification and regression
+- Verify patient-level validation
