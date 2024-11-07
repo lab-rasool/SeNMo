@@ -143,4 +143,4 @@ For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/ar
 - Provide Preprocessing code
 - Link to HoneyBee
 - Merge classification and regression
-- Verify patient-level validation
+- Add TLS Results
