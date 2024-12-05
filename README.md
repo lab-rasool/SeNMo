@@ -142,5 +142,3 @@ For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/ar
 - Link to MINDS dataset
 - Provide Preprocessing code
 - Link to HoneyBee
-- Merge classification and regression
-- Add TLS Results
