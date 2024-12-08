@@ -19,7 +19,7 @@ SeNMo is a deep learning model designed to enhance the analysis of multi-omics d
 - [Checkpoints](#checkpoints)
 - [Embeddings](#embeddings)
 - [Paper](#paper)
-- [TODO](#todo)
+- [Future Work](#futurework)
 
 ## Requirements
 
@@ -129,17 +129,17 @@ python SeNMo_Ensemble.py \
 
 ## Checkpoints
 
-You can find the pre-trained model checkpoints [here](https://huggingface.co/Lab-Rasool/SeNMo/tree/main).
+You can find the pre-trained model checkpoints [here](https://huggingface.co/Lab-Rasool/SeNMo/tree/main), and separately in two parts [part-1](https://doi.org/10.5281/zenodo.14219799) and [part-2](https://doi.org/10.5281/zenodo.14286190).
 
 ## Embeddings
 
-Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-Rasool/TCGA/viewer/molecular).
+Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-Rasool/TCGA/viewer/molecular), and separately [here](https://doi.org/10.5281/zenodo.14219799).
 
 ## Paper
 
 For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/arXiv.2405.08226).
 
-## Future Works
+## Future Work
 
 - Link to MINDS dataset
 - Link to HoneyBee
