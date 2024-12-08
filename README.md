@@ -7,6 +7,8 @@
 
 SeNMo is a deep learning model designed to enhance the analysis of multi-omics data in oncology. This repository contains the code and instructions for training, fine-tuning, testing, and ensemble testing of the SeNMo model.
 
+![SeNMo Framework](work-layout1.png)
+
 ## Table of Contents
 
 - [Requirements](#requirements)
@@ -137,8 +139,7 @@ Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-
 
 For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/arXiv.2405.08226).
 
-## TODO
+## Future Works
 
 - Link to MINDS dataset
-- Provide Preprocessing code
 - Link to HoneyBee
