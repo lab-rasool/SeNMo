@@ -19,7 +19,7 @@ SeNMo is a deep learning model designed to enhance the analysis of multi-omics d
 - [Checkpoints](#checkpoints)
 - [Embeddings](#embeddings)
 - [Paper](#paper)
-- [Future Work](#futurework)
+- [Future Work](#future_work)
 
 ## Requirements
 
@@ -139,7 +139,7 @@ Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-
 
 For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/arXiv.2405.08226).
 
-## Future Work
+## Future_Work
 
 - Link to MINDS dataset
 - Link to HoneyBee
