@@ -118,4 +118,4 @@ if __name__ == "__main__":
     preprocessor.process()
 
 # Example usage:
-## python DNAMethylationPreprocessor.py methylation450.tsv output_file.csv
+## python DNAmethyl_preprocess.py methylation450.tsv output_file.csv
