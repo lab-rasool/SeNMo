@@ -140,6 +140,7 @@ Access the TCGA molecular embeddings [here](https://huggingface.co/datasets/Lab-
 For detailed information, refer to the [arXiv paper](https://doi.org/10.48550/arXiv.2405.08226).
 
 ## Future_Work
+in progress...creating class packages for CLI pre-processing and generating embeddings at inference time.
 
-- Link to MINDS dataset
+- Link to MINDS dataset 
 - Link to HoneyBee
