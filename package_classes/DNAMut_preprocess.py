@@ -74,6 +74,17 @@ class DNAMutationPreprocessor:
         print("Final data shape:", data.shape)
         return data
 
+    def transpose_data(self, data):
+        """
+        Transpose the data so that the feature names are in the first row and values in the second.
+
+        :param data: DataFrame to transpose
+        :return: Transposed DataFrame
+        """
+        transposed_data = data.set_index('Hugo_Symbol').transpose()
+        print("Transposed data shape:", transposed_data.shape)
+        return transposed_data
+
     def save_to_csv(self, data):
         """
         Save the processed data to a CSV file.
@@ -93,7 +104,10 @@ class DNAMutationPreprocessor:
         # Step 2: Adjust the feature size
         data = self.adjust_feature_size(data)
 
-        # Step 3: Save the final processed data
+        # Step 3: Transpose the data
+        data = self.transpose_data(data)
+
+        # Step 4: Save the final processed data
         self.save_to_csv(data)
 
 if __name__ == "__main__":
