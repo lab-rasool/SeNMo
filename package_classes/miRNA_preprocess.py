@@ -34,7 +34,7 @@ class MiRNAPreprocessor:
         """
         return data.dropna()
 
-    def adjust_feature_size(self, data, target_size=1730):
+    def adjust_feature_size(self, data, target_size=1731):
         """
         Ensure the number of features is equal to the target size by dropping zero-value columns if needed.
 
